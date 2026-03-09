@@ -1,12 +1,10 @@
 "use client";
-
 import { useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { shippingAddressSchema, type ShippingAddressSchema } from "@/lib/schemas/addressSchema";
 import { FloatingLabelField } from "@/components/ui/FloatingLabelField";
 import { AnimatedButton } from "@/components/ui/AnimatedButton";
-
 const FIELDS: {
   name: keyof ShippingAddressSchema;
   label: string;
